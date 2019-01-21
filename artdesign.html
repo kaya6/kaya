@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 9px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+div#mySidenav {
+   position: absolute;
+   top: 400px;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+#home {
+  top:20px;
+  background-color: pink;
+}
+#about {
+  top: 80px;
+  background-color: brown;
+}
+
+#projects
+{
+  top: 140px;
+  background-color: teal;
+}
+
+#contact {
+  top: 200px;
+  background-color: orange;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+  <a href="kaya.html" id="home">Home</a>
+  <a href="about.html" id="about">About </a>
+  <a href="youthmatters.html" id="projects">Youth Matters</a>
+  <a href="contact.html" id="contact">Contact</a>
+</div>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Art & Design</h1>
+<hr>
+
+<h2>Fashion  - Jewelry - Fine Art - Photography </h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Fashion  styling')"> Fashion  Styling</button>
+  <button class="btn" onclick="filterSelection('Mzila by Kaya')"> Mzila by Kaya</button>
+  <button class="btn" onclick="filterSelection('exhibitions')"> Exhibitions</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Fashion  styling">
+    <div class="content">
+      <img src="Images/africa1.jpg" alt="Fashion  week" style="width:100%">
+      <h4>Africa is now</h4>
+      <p>African Fashion  International Cape Town Fashion  Week</p>
+    </div>
+  </div>
+  <div class="column Fashion  styling">
+    <div class="content">
+    <img src="Images/africa4.jpg" alt="Fashion  week" style="width:100%">
+      <h4>Africa is now</h4>
+      <p>African Fashion  International Cape Town Fashion  Week</p>
+    </div>
+  </div>
+  <div class="column Fashion  styling">
+    <div class="content">
+    <img src="Images/africa6.jpg" alt="Fashion  week" style="width:100%">
+      <h4>Africa is now</h4>
+      <p>African Fashion International Cape Town Fashion Week</p>
+    </div>
+  </div>
+  
+  <div class="column Fashion  styling">
+    <div class="content">
+      <img src="Images/africa10.jpg" alt="Fashion  week" style="width:100%">
+      <h4>Africa is now</h4>
+      <p>African Fashion International Cape Town Fashion Week</p>
+    </div>
+  </div>
+  <div class="column Fashion  styling">
+    <div class="content">
+    <img src="Images/africa12.jpg" alt="Fashion  week" style="width:100%">
+      <h4>Africa is now</h4>
+      <p>African Fashion International Cape Town Fashion Week</p>
+    </div>
+  </div>
+  <div class="column Fashion  styling">
+    <div class="content">
+    <img src="Images/africa14.jpg" alt="Fashion  week" style="width:100%">
+      <h4>Africa is now</h4>
+      <p>African Fashion International Cape Town Fashion Week </p>
+    </div>
+  </div>
+   <div class="column Fashion  styling">
+    <div class="content">
+    <img src="Images/africa16.jpg" alt="Fashion  week" style="width:100%">
+      <h4>Africa is now</h4>
+      <p>African Fashion   International Cape Town Fashion   Week</p>
+    </div>
+  </div>
+   <div class="column Fashion  styling">
+    <div class="content">
+    <img src="Images/imprint2.jpg" alt="Fashion  week" style="width:100%">
+      <h4>ImprintZA A/W18</h4>
+      <p>African Fashion International Cape Town Fashion Week</p>
+    </div>
+  </div>
+   <div class="column Fashion  styling">
+    <div class="content">
+    <img src="Images/imprint5.jpg" alt="Fashion  week" style="width:100%">
+      <h4>ImprintZA A/W18</h4>
+      <p>African Fashion International Cape Town Fashion Week</p>
+    </div>
+  </div>
+   <div class="column Fashion  styling">
+    <div class="content">
+    <img src="Images/imprint8.jpg" alt="Fashion  week" style="width:100%">
+      <h4>ImprintZA A/W18</h4>
+      <p>African Fashion International Cape Town Fashion Week</p>
+    </div>
+  </div>
+   <div class="column Fashion styling">
+    <div class="content">
+    <img src="Images/imprint10.jpg" alt="Fashion  week" style="width:100%">
+      <h4>ImprintZA A/W18</h4>
+      <p>African Fashion International Cape Town Fashion Week</p>
+    </div>
+  </div>
+   <div class="column Fashion styling">
+    <div class="content">
+    <img src="Images/imprint14.jpg" alt="Fashion  week" style="width:100%">
+      <h4>ImprintZA A/W18</h4>
+      <p>African Fashion International Cape Town Fashion Week</p>
+    </div>
+  </div>
+   <div class="column Fashion styling">
+    <div class="content">
+    <img src="Images/imprint16.jpg" alt="Fashion  week" style="width:100%">
+      <h4>ImprintZA A/W18</h4>
+      <p>African Fashion International Cape Town Fashion Week</p>
+    </div>
+  </div>
+   <div class="column Fashion styling">
+    <div class="content">
+    <img src="Images/imprint18.jpg" alt="Fashion  week" style="width:100%">
+      <h4>ImprintZA A/W18</h4>
+      <p>African Fashion International Cape Town Fashion Week</p>
+    </div>
+  </div>
+   <div class="column Fashion  styling">
+    <div class="content">
+    <img src="Images/imprint20.jpg" alt="Fashion  week" style="width:100%">
+      <h4>ImprintZA A/W18</h4>
+      <p>African Fashion International Cape Town Fashion Week</p>
+    </div>
+  </div>
+   <div class="column Fashion  styling">
+    <div class="content">
+    <img src="Images/imprint23.jpg" alt="Fashion  week" style="width:100%">
+      <h4>ImprintZA A/W18</h4>
+      <p>African Fashion International Cape Town Fashion Week</p>
+    </div>
+  </div>
+   <div class="column Fashion  styling">
+    <div class="content">
+    <img src="Images/imprint26.jpg" alt="Fashion  week" style="width:100%">
+      <h4>ImprintZA A/W18</h4>
+      <p>African Fashion International Cape Town Fashion Week</p>
+    </div>
+  </div>
+   <div class="column Fashion  styling">
+    <div class="content">
+    <img src="Images/imprint29.jpg" alt="Fashion  week" style="width:100%">
+      <h4>ImprintZA A/W</h4>
+      <p>African Fashion International Cape Town Fashion Week</p>
+    </div>
+  </div>
+   <div class="column Fashion  styling">
+    <div class="content">
+    <img src="Images/imprint32.jpg" alt="Fashion  week" style="width:100%">
+      <h4>ImprintZA A/W18</h4>
+      <p>African Fashion International Cape Town Fashion Week</p>
+    </div>
+  </div>
+
+  <div class="column Fashion  styling">
+    <div class="content">
+      <img src="Images/imprint36.jpg" alt="Fashion  week" style="width:100%">
+      <h4>ImprintZA A/W18</h4>
+      <p>African Fashion International Cape Town Fashion Week</p>
+
+    </div>
+  </div>
+  <div class="column Fashion  styling">
+    <div class="content">
+      <img src="Images/imprint38.jpg" alt="Fashion  week" style="width:100%">
+      <h4>ImprintZA A/W18</h4>
+      <p>African Fashion International Cape Town Fashion Week</p>
+    </div>
+  </div>
+  <div class="column Fashion  styling">
+    <div class="content">
+      <img src="Images/imprint39.jpg" alt="Fashion  week" style="width:100%">
+      <h4>ImprintZA A/W18</h4>
+      <p>African Fashion International Cape Town Fashion Week</p>
+
+    </div>
+  </div>
+  <div class="column exhibitions">
+    <div class="content">
+    <img src="Images/q2.png" alt="Car" style="width:100%">
+      <h4>Inyath'ibuzwa kwaba phambili</h4>
+      <p>Art work by Qama Maswana</p>
+    </div>
+  </div>
+  <div class="column exhibitions">
+    <div class="content">
+    <img src="Images/q4.png" alt="Exhibitions" style="width:100%">
+      <h4>Inyath'ibuzwa kwaba phambili</h4>
+      <p>Art work by Qama Maswana</p>
+    </div>
+  </div>
+  <div class="column exhibitions">
+    <div class="content">
+    <img src="Images/q1.png" alt="Exhibitions" style="width:100%">
+      <h4>Inyath'ibuzwa kwaba phambili</h4>
+      <p>Art work by Qama Maswana</p>
+    </div>
+  </div>
+  <div class="column exhibitions">
+    <div class="content">
+    <img src="Images/l1.png" alt="Exhibitions" style="width:100%">
+      <h4> Jewels and Turbans</h4>
+      <p>Photography by Luxolo Witwoet</p>
+    </div>
+  </div>
+  <div class="column exhibitions">
+    <div class="content">
+    <img src="Images/l2.png" alt="Exhibitions" style="width:100%">
+      <h4> Jewels and Turbans</h4>
+      <p>Photography by Luxolo Witwoet</p>
+    </div>
+  </div>
+  <div class="column exhibitions">
+    <div class="content">
+    <img src="Images/l3.png" alt="Exhibitions" style="width:100%">
+      <h4> Jewels and Turbans</h4>
+      <p>Photography by Luxolo Witwoet</p>
+    </div>
+  </div>
+  <div class="column exhibitions">
+    <div class="content">
+    <img src="Images/l4.png" alt="Exhibitions" style="width:100%">
+      <h4> Jewels and Turbans</h4>
+      <p>Photography by Luxolo Witwoet</p>
+    </div>
+  </div>
+  <div class="column exhibitions">
+    <div class="content">
+    <img src="Images/l5.png" alt="Exhibitions" style="width:100%">
+      <h4> Jewels and Turbans</h4>
+      <p>Photography by Luxolo Witwoet</p>
+    </div>
+  </div>
+  <div class="column exhibitions">
+    <div class="content">
+    <img src="Images/b1.png" alt="Exhibitions" style="width:100%">
+      <h4>Emazulwini</h4>
+      <p>Photography by Button Konupi</p>
+    </div>
+  </div>
+  <div class="column exhibitions">
+    <div class="content">
+    <img src="Images/b2.png" alt="Exhibitions" style="width:100%">
+      <h4>Emazulwini</h4>
+      <p>Photography by Button Konupi</p>
+    </div>
+  </div>
+  <div class="column exhibitions">
+    <div class="content">
+    <img src="Images/b3.png" alt="Exhibitions" style="width:100%">
+      <h4>Emazulwini</h4>
+      <p>Photography by Button Konupi</p>
+    </div>
+  </div>
+  <div class="column exhibitions">
+    <div class="content">
+    <img src="Images/b4.png" alt="Exhibitions" style="width:100%">
+      <h4>Emazulwini</h4>
+      <p>Photography by Button Konupi</p>
+    </div>
+  </div>
+  <div class="column exhibitions">
+    <div class="content">
+    <img src="Images/b6.png" alt="Exhibitions" style="width:100%">
+      <h4>Emazulwini</h4>
+      <p>Photography by Button Konupi</p>
+    </div>
+  </div>
+  <div class="column exhibitions">
+    <div class="content">
+    <img src="Images/b5.png" alt="Exhibitions" style="width:100%">
+      <h4>Emazulwini</h4>
+      <p>Photography by Button Konupi</p>
+    </div>
+  </div>
+  <div class="column fashion styling">
+    <div class="content">
+    <img src="Images/reupload8.jpg" alt="fashion week" style="width:100%">
+      <h4>ImprintZA SS19</h4>
+      <p>African Fashion International Joburg Fashion Week</p>
+    </div>
+  </div>
+   <div class="column fashion styling">
+    <div class="content">
+    <img src="Images/reupload5.jpg" alt="fashion week" style="width:100%">
+      <h4>ImprintZA SS19</h4>
+      <p>African Fashion International Joburg Fashion Week</p>
+    </div>
+  </div>
+   <div class="column fashion styling">
+    <div class="content">
+    <img src="Images/reupload17.jpg" alt="fashion week" style="width:100%">
+      <h4>ImprintZA SS19</h4>
+      <p>African Fashion International Joburg Fashion Week</p>
+    </div>
+  </div>
+   <div class="column fashion styling">
+    <div class="content">
+    <img src="Images/reupload19.jpg" alt="fashion week" style="width:100%">
+      <h4>ImprintZA SS19</h4>
+      <p>African Fashion International Joburg Fashion Week</p>
+    </div>
+  </div>
+   <div class="column fashion styling">
+    <div class="content">
+    <img src="Images/reupload23.jpg" alt="fashion week" style="width:100%">
+      <h4>ImprintZA SS19</h4>
+      <p>African Fashion International Joburg Fashion Week</p>
+    </div>
+  </div>
+   <div class="column fashion styling">
+    <div class="content">
+    <img src="Images/reupload35.jpg" alt="fashion week" style="width:100%">
+      <h4>ImprintZA SS19</h4>
+      <p>African Fashion International Joburg Fashion Week</p>
+    </div>
+  </div>
+   <div class="column fashion styling">
+    <div class="content">
+    <img src="Images/reupload36.jpg" alt="fashion week" style="width:100%">
+      <h4>ImprintZA SS19</h4>
+      <p>African Fashion International Joburg Fashion Week</p>
+    </div>
+  </div>
+   <div class="column fashion styling">
+    <div class="content">
+    <img src="Images/reupload43.jpg" alt="fashion week" style="width:100%">
+      <h4>ImprintZA SS19</h4>
+      <p>African Fashion International Joburg Fashion Week</p>
+    </div>
+  </div>
+   <div class="column fashion styling">
+    <div class="content">
+    <img src="Images/reupload46.jpg" alt="fashion week" style="width:100%">
+      <h4>ImprintZA SS19</h4>
+      <p>African Fashion International Joburg Fashion Week</p>
+    </div>
+  </div>
+   <div class="column fashion styling">
+    <div class="content">
+    <img src="Images/reupload52.jpg" alt="fashion week" style="width:100%">
+      <h4>ImprintZA SS19</h4>
+      <p>African Fashion International Joburg Fashion Week</p>
+    </div>
+  </div>
+   <div class="column fashion styling">
+    <div class="content">
+    <img src="Images/reupload55.jpg" alt="fashion week" style="width:100%">
+      <h4>ImprintZA SS19</h4>
+      <p>African Fashion International Joburg Fashion Week</p>
+    </div>
+  </div>
+   <div class="column fashion styling">
+    <div class="content">
+    <img src="Images/reupload58.jpg" alt="fashion week" style="width:100%">
+      <h4>ImprintZA SS19</h4>
+      <p>African Fashion International Joburg Fashion Week</p>
+    </div>
+  </div>
+   <div class="column fashion styling">
+    <div class="content">
+    <img src="Images/reupload61.jpg" alt="fashion week" style="width:100%">
+      <h4>ImprintZA SS19</h4>
+      <p>African Fashion International Joburg Fashion Week</p>
+    </div>
+  </div>
+    
+  <div class="column Mzila by Kaya">
+    <div class="content">
+    <img src="Images/s6.png" alt="fashion week" style="width:100%">
+      <h4>2018 Capsule Collection</h4>
+      <p>Isangqa/The circle</p>
+    </div>
+  </div>
+  <div class="column Mzila by Kaya">
+    <div class="content">
+    <img src="Images/s8.png" alt="fashion week" style="width:100%">
+      <h4>2018 Capsule Collection</h4>
+      <p>Isangqa/The circle</p>
+    </div>
+  </div>
+  <div class="column Mzila by Kaya">
+    <div class="content">
+    <img src="Images/s3.jpg" alt="fashion week" style="width:100%">
+      <h4>2018 Capsule Collection</h4>
+      <p>Isangqa/The circle</p>
+    </div>
+  </div>
+  <div class="column Mzila by Kaya">
+    <div class="content">
+    <img src="Images/s4.png" alt="fashion week" style="width:100%">
+      <h4>2018 Capsule Collection</h4>
+      <p>Isangqa/The circle</p>
+    </div>
+  </div>
+  <div class="column Mzila by Kaya">
+    <div class="content">
+    <img src="Images/s5.png" alt="fashion week" style="width:100%">
+      <h4>2018 Capsule Collection</h4>
+      <p>Isangqa/The circle</p>
+    </div>
+  </div>
+  <div class="column Mzila by Kaya">
+    <div class="content">
+    <img src="Images/s7.png" alt="fashion week" style="width:100%">
+      <h4>2018 Capsule Collection</h4>
+      <p>Isangqa/The circle</p>
+    </div>
+  </div>
+  <div class="column Mzila by Kaya">
+    <div class="content">
+    <img src="Images/s1.png" alt="fashion week" style="width:100%">
+      <h4>2018 Capsule Collection</h4>
+      <p>Isangqa/The circle</p>
+    </div>
+  </div>
+  <div class="column Mzila by Kaya">
+    <div class="content">
+    <img src="Images/s2.png" alt="fashion week" style="width:100%">
+      <h4>2018 Capsule Collection</h4>
+      <p>Isangqa/The circle</p>
+    </div>
+  </div>
+  <div class="column Mzila by Kaya">
+    <div class="content">
+    <img src="Images/s9.png" alt="fashion week" style="width:100%">
+      <h4>2018 Capsule Collection</h4>
+      <p>Isangqa/The circle</p>
+    </div>
+  </div>
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>

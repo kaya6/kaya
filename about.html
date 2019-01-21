@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: pink;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: melbourne;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.menu{
+  color: #818181;
+}
+
+/* Style the body */
+body {
+  font-family: melbourne;
+  margin: 0;
+  background-color: white;
+  text-align: center;
+  color: black;
+  font-size: 23px;
+
+
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background-image: url("images/bk.jpg");
+  color: white;
+  font-size: 30px;
+  opacity: 1.9;
+  height: 356px;
+  
+}
+
+/* Page Content */
+.content {padding:20px;}
+p{ 
+  text-align: center
+  width:50px;  
+}
+
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="kayam.html">Home</a>
+  <a href="artdesign.html">Art & Design</a>
+
+  <a href="youthmatters.html">Youth Matters</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()"><div class="menu">&#9776;</div></span>
+</div>
+
+
+
+
+<script type="text/javascript">
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "white";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+
+</script>
+ 
+
+<div class="header">
+  <h1></h1>
+ 
+</div>
+
+<div class="content">
+<p>AT THE AGE OF 23, KAYA MTENGWANE IS AN ENIGMATIC VISIONARY THAT HAS BEEN HONING HER ABILITY TO BUILD A REFINED BREED OF GLOBALLY RELEVANT PARTNERSHIPS, ROOTED IN RESOURCING AFRICA’S FUTURE. WITH HER INNATE CREATIVITY AND DISRUPTIVE APPROACH TO BUSINESS, MTENGWANE SITS AS FOUNDER AND YOUTH PROGRAMME DIRECTOR OF THE YOUTH MATTERS MOVEMENT WHICH WORKS WITH THE SOS CHILDREN'S VILLAGES, ACTIVATE, LIFE CHOICES AND THE SESONA SIBANE HIV & AIDS NON-PROFIT ORGANISATION. </p>
+
+
+<p>With a nod from the Motsepe Foundation, through her work fusing her fine art, fashion and jewelry design background with her community work to equip kids from vulnerable backgrounds, she has seen herself listed as one of South Africa's most influential young people to look out for, her career path reads as that of someone who has made it their life’s work to go beyond doing business as usual. Her interests and influence have seen her become a sought after fashion forecaster, speaker and thought leader on all things fashion & lifestyle, art& design and sustainability in Africa.</p>
+
+
+<p>INSPIRED BY HER TAKE ON “AFRICA WITH NO PRINTS” AS A DESIGN LANGUAGE, KAYA'S BODY OF WORK HAS MADE A UNIQUE CONTRIBUTION TO THE INTERNATIONAL FASHION CONVERSATION. MOST NOTABLE, IS HER INYATHI IBUZWA KWABA PHAMBILI EXHIBITION WHICH GARNERED ATTENTION FOR ITS ABILITY TO APPLAUD AND CHAMPION UNDERREPRESENTED VOICES AND UNDERAPPRECIATED SUBJECT MATTER IN THE AFRICAN FASHION INDUSTRY.</p>
+
+
+<p>The evolution of the Kaya will now see the launch of Concepts by Kaya which will see her working with Non-profit organisations namely; Sesona Sibane Hiv & Aids project, Vocal Revolutionaries and the SOS Children's Villages, to create a recycled denim collection of clothes and accessories titled ‘Up-cycled’, which will will be showcased at one of South Africa's prominent fashion shows. All of Mtengwane’s pursuits are about reshaping the industry – not only in South Africa, but on an international scale. Through her hands an unexpected spirit of African style finds a new outlet, which has been the draw card in attracting partnerships and working relationships with local and international brands. </p>
+
+
+
+</div>
+
+</body>
+</html>

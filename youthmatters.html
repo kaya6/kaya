@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 9px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+div#mySidenav {
+   position: absolute;
+   top: 400px;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+#home {
+  top:20px;
+  background-color: pink;
+}
+#about {
+  top: 80px;
+  background-color: brown;
+}
+
+#projects
+{
+  top: 140px;
+  background-color: teal;
+}
+
+#contact {
+  top: 200px;
+  background-color: orange;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+     <div id="mySidenav" class="sidenav">
+  <a href="kaya.html" id="home">Home</a>
+  <a href="about.html" id="about">About </a>
+  <a href="artdesign.html" id="projects">Art & Design</a>
+  <a href="contact.html" id="contact">Contact</a>
+</div>
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Youth Matters</h1>
+<hr>
+
+<h2>Non-Profit Organisation</h2>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="Images/sesona.jpg" alt="Health & Nutrition" style="width:100%">
+      <h3>Sesona Sibane Non-profit Organisation</h3>
+      <p>Sesona Sibane HIV/AIDS Project was established in 2005 
+with the aim of tackling challenges faced by society such as illnesses, malnutrition 
+and peer support. The organisation conducts HIV/AIDS & TB Care Project, Craft & 
+Beading Project and Sewing Programme. We are also engaged in After-school Ex-
+extramural Activities and Youth After-care Programme. </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="Images/sos.jpg" alt="Safety & Security" style="width:100%">
+      <h3>SOS Children's Village</h3>
+      <p>The organization provides humanitarian and developmental assistance to children in need and protects their interests and rights around the world</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="Images/revz.png" alt="Education" style="width:100%">
+      <h3>Vocal Revolutionaries</h3>
+      <p>Vocal Revs is a youth organisation that works closely 
+with township youth empowering them with digital skills, the organisation be-
+lieves in providing the disadvantaged youth of South Africa with a space of self-
+expression, educational improvement and a home for safety. </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="Images/y2.jpg" alt="Mountains" style="width:100%">
+      <h3>Youth Matters</h3>
+      <p> Youth Matters Movement is a socio-economic movement by 
+young people for young people.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Nm518ZSn9TI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <h3>Concepts by Kaya</h3>
+  <p>Concepts by Kaya is an accessories brand - the brand weds both art and fashion by strictly using 
+recycled materials to create eccentric pieces installing allusions of afro-modernism and Afro-
+symbolism. Through this collaboration i aims to breed a lifestyle 
+and culture that will spark minds of influence, through this we aspire to inspire 
+and enkindle young individuals and induce a culture of solution based thinking 
+and independence - as young women that resonates and inspires a young person 
+to dream and desire a life beyond their circumstances.</p>
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
